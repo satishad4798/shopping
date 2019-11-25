@@ -1,0 +1,262 @@
+/* Made with love by Mutiullah Samim*/
+
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+html,body{
+/* background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg'); */
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+margin-left: 6px;
+margin-right: 6px;
+margin-top: 4px;
+font-size: large;
+/* font-family: 'Numans', sans-serif; */
+}
+
+.container{
+height: 100%;
+align-content: center;
+}
+
+
+
+.card{
+height: 370px;
+margin-top: auto;
+margin-bottom: auto;
+width: 400px;
+background-color: rgba(0,0,0,0.5) !important;
+}
+
+.social_icon span{
+font-size: 60px;
+margin-left: 10px;
+color: #FFC312;
+}
+
+.social_icon span:hover{
+color: white;
+cursor: pointer;
+}
+
+.card-header h3{
+color: white;
+}
+
+.social_icon{
+position: absolute;
+right: 20px;
+top: -45px;
+}
+
+.input-group-prepend span{
+width: 50px;
+background-color: #FFC312;
+color: black;
+border:0 !important;
+}
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+
+.remember{
+color: white;
+}
+
+.remember input
+{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.login_btn{
+color: black;
+background-color: #FFC312;
+width: 100px;
+}
+
+.login_btn:hover{
+color: black;
+background-color: white;
+}
+
+.links{
+color: white;
+}
+
+.links a{
+margin-left: 4px;
+}
+
+
+#radioBtn .notActive{
+    color: #3276b1;
+    background-color: #fff;
+}
+
+
+.hide-bullets {
+    list-style:none;
+    margin-left: -40px;
+    margin-top:20px;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+    width: 100%;
+}
+#slider-thumbs {
+    height: 565px;
+    overflow-y: scroll;
+    white-space: nowrap;
+}
+
+
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block }
+
+body { line-height: 1 }
+
+ol, ul { list-style: none }
+
+blockquote, q { quotes: none }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.thumbnails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  line-height: 0;
+  
+}
+
+.thumbnails li {
+  -webkit-box-flex: 1;
+  -ms-flex: auto;
+  flex: auto;
+}
+
+.thumbnails a { display: block; }
+
+.thumbnails img {
+  width: 30vmin;
+  height: 20vmin;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: top;
+  object-position: top;
+}
+
+.slides { overflow: hidden; }
+
+.slides, .slides li {
+  width: 75vmin;
+  height: 70vmin;
+}
+
+.slides img {
+    width:100% ;
+  height:80vmin;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: top;
+  object-position: top;
+}
+.slides video {
+    width:100% ;
+  height:80vmin;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: top;
+  object-position: top;
+}
+
+.slides li {
+  position: absolute;
+  z-index: 1;
+}
+ @-webkit-keyframes 
+slide {  0% {
+ -webkit-transform: translateY(-100%);
+ transform: translateY(-100%);
+}
+ 100% {
+ -webkit-transform: translateY(0%);
+ transform: translateY(0%);
+}
+}
+ @keyframes 
+slide {  0% {
+ -webkit-transform: translateY(-100%);
+ transform: translateY(-100%);
+}
+ 100% {
+ -webkit-transform: translateY(0%);
+ transform: translateY(0%);
+}
+}
+
+.slides li:target {
+  z-index: 3;
+  -webkit-animation: slide 1s 1;
+}
+ @-webkit-keyframes 
+hidden {  0% {
+ z-index: 2;
+}
+ 100% {
+ z-index: 2;
+}
+}
+ @keyframes 
+hidden {  0% {
+ z-index: 2;
+}
+ 100% {
+ z-index: 2;
+}
+}
+
+.slides li:not(:target) { -webkit-animation: hidden 1s 1; }
